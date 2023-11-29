@@ -1,0 +1,300 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgartikel"
+    tools:context=".Artikel2"
+    tools:ignore="ExtraText">
+
+
+    <ScrollView
+        android:layout_width="376dp"
+        android:layout_height="686dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/arrowback">
+
+        <!-- ConstraintLayout di dalam ScrollView -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextView pertama -->
+
+            <TextView
+                android:id="@+id/tvbuncis"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:text="Urban Farming: Konsep Bertani Masa Kini"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/kotakbuncis"
+                android:layout_width="146dp"
+                android:layout_height="122dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+                app:srcCompat="@drawable/kotakdetail" />
+
+            <!-- TextView tambahan -->
+
+            <ImageView
+                android:id="@+id/imgartikel"
+                android:layout_width="122dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="52dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.081"
+                app:layout_constraintStart_toStartOf="@id/kotakbuncis"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+                app:srcCompat="@drawable/koriander" />
+
+            <TextView
+                android:id="@+id/idpenjelasan1"
+                android:layout_width="359dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="24dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="RumahCom – Konsep urban farming semakin menjadi populer di antara masyarakat perkotaan. Tak perlu lahan luas, bertani kini bisa dilakukan di lahan terbatas, seperti pekarangan, balkon, hingga atap."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgartikel" />
+
+            <TextView
+                android:id="@+id/idpenjelasan2"
+                android:layout_width="359dp"
+                android:layout_height="122dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Awalnya, konsep bertani di lahan terbatas ini merupakan ide dari komunitas pencinta lingkungan yang bergerak secara mandiri. Namun, kini konsep bertani modern telah berkembang secara masif menjelma menjadi konsep bertani masa kini, karena mampu menjawab tantangan bertani di tengah minimnya lahan di perkotaan, sekaligus solusi dalam menjaga ketahanan pangan."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan1" />
+
+            <TextView
+                android:id="@+id/idpenjelasan3"
+                android:layout_width="359dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Kementerian Pertanian di bawah arahan Menteri Pertanian Syahrul Yasin Limpo turut mendorong tumbuhnya pertanian perkotaan dengan mengoptimalkan teknologi dan memaksimalkan keterbatasan lahan tersebut."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan2" />
+
+
+            <TextView
+                android:id="@+id/idpenjelasan4"
+                android:layout_width="359dp"
+                android:layout_height="137dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Urban farming adalah kegiatan bercocok tanam di lahan terbatas seperti lingkungan rumah, dianggap cocok dengan impian masyarakat perkotaan dalam menjalani kehidupan yang lebih sehat. Hasil panen yang didapatkan dianggap lebih menyehatkan karena sepenuhnya menerapkan sistem penanaman organik. Artinya, tidak ada bahan kimia seperti pestisida sintetis dan bahan lainnya yang dilibatkan dalam kegiatan bercocok tanam."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan3" />
+
+            <TextView
+                android:id="@+id/idpenjelasan5"
+                android:layout_width="359dp"
+                android:layout_height="97dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Dalam jangkauan yang lebih besar, konsep ini juga memiliki dampak yang lebih besar bagi kelangsungan hidup masyarakat di perkotaan. Bahkan, dapat menjadi konsep bertani yang ideal di masa yang akan datang karena banyaknya manfaat yang bisa didapatkan."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan4" />
+
+            <TextView
+                android:id="@+id/idpenjelasan6"
+                android:layout_width="359dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="1. Menjawab Krisis Ruang Terbuka Hijau"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan5" />
+
+            <TextView
+                android:id="@+id/idpenjelasan7"
+                android:layout_width="359dp"
+                android:layout_height="154dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Pembangunan di perkotaan menyebabkan semakin terbatasnya ruang terbuka hijau, yang akan mempengaruhi kestabilan ekosistem lingkungan di sekitarnya. Keterbatasan ruang terbuka hijau ini juga dapat meningkatkan polusi yang berdampak buruk untuk kesehatan.
+Konsep ini seolah menjadi jawaban atas hal tersebut. Lahan terbuka hijau yang tercipta dari urban farming di tengah padatnya bangunan perkotaan bagaikan oase yang menghadirkan kenyamanan dan kesegaran."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan6" />
+
+            <TextView
+                android:id="@+id/idpenjelasan8"
+                android:layout_width="359dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="2. Menjaga Ketahanan Pangan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan7" />
+
+            <TextView
+                android:id="@+id/idpenjelasan9"
+                android:layout_width="359dp"
+                android:layout_height="139dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Tereliminasinya lahan pertanian di perkotaan membuat kota tak lagi mampu memenuhi kebutuhan pangannya secara mandiri. Permintaan akan bahan makanan pun melonjak, dan jika tidak tercukupi, hal ini akan menyebabkan inflasi harga. Konsep yang dijalankan dengan serius dapat membantu mencukupi ketersediaan bahan makanan dan memperkuat ketahanan pangan masyarakat kota. Saat ini, tak sedikit pemerintah kota yang ikut membantu aktivitas di kotanya, misalnya dengan menyediakan regulasi khusus soal kebijakan hak guna lahan."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan8" />
+
+            <TextView
+                android:id="@+id/idpenjelasan10"
+                android:layout_width="359dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="3. Pemberdayaan Masyarakat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan9" />
+
+            <TextView
+                android:id="@+id/idpenjelasan11"
+                android:layout_width="359dp"
+                android:layout_height="181dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Konsep ini tak sekadar aktivitas kembali kepada alam, tetapi juga dapat merekatkan hubungan sosial antara para pelaku. Umumnya, konsep ini dijalankan oleh suatu komunitas atau sekelompok masyarakat berbasis lingkungan, seperti tetangga. Selain dapat memperkuat rasa kebersamaan, konsep ini juga dapat menciptakan budaya gotong royong dalam lingkungan masyarakat kota. Tidak hanya sekadar kegiatan pemberdayaan komunitas, urban farming juga dapat menunjang kondisi ekonomi masyarakat melalui pemasaran hasil panen."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan10" />
+
+
+            <TextView
+                android:id="@+id/tvpenulis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="oleh Tim Editorial Rumah.com"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis" />
+
+            <!-- Tambahkan TextView tambahan sesuai kebutuhan -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="3dp" />
+    <!--    nav button-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#60905B"
+        android:foregroundTint="#60905B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="632dp"
+            android:src="@drawable/navbar_bg"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="707dp"
+            android:src="@drawable/navbar_alarm"></ImageView>
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="710dp"
+            android:src="@drawable/navbar_location"></ImageView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="702dp"
+            android:src="@drawable/navbar_konten"></ImageView>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="699dp"
+            android:src="@drawable/navbar_profile"></ImageView>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

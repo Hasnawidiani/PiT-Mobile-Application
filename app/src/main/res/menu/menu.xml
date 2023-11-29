@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/spinnerItem"
+        android:title="Pilih Jenis">
+        <menu>
+            <item
+                android:id="@+id/spinnerJenis"
+                android:title="Jenis 1" />
+            <item
+                android:id="@+id/spinnerLokasi"
+                android:title="Jenis 2" />
+            <!-- Tambahkan item spinner sesuai kebutuhan -->
+        </menu>
+    </item>
+</menu>

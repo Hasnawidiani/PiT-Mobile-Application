@@ -1,0 +1,284 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgartikel"
+    tools:context=".Artikel3"
+    tools:ignore="ExtraText">
+
+
+    <ScrollView
+        android:layout_width="376dp"
+        android:layout_height="686dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/arrowback">
+
+        <!-- ConstraintLayout di dalam ScrollView -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextView pertama -->
+
+            <TextView
+                android:id="@+id/tvbuncis"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:text="Urban Farming Sarana Pembelajaran untuk Anak Usia Dini"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/kotakbuncis"
+                android:layout_width="146dp"
+                android:layout_height="122dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+                app:srcCompat="@drawable/kotakdetail" />
+
+            <!-- TextView tambahan -->
+
+            <ImageView
+                android:id="@+id/imgartikel"
+                android:layout_width="122dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="52dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.081"
+                app:layout_constraintStart_toStartOf="@id/kotakbuncis"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+                app:srcCompat="@drawable/koriander" />
+
+            <TextView
+                android:id="@+id/idpenjelasan1"
+                android:layout_width="359dp"
+                android:layout_height="159dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="24dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text=" Urban Farming atau pertanian perkotaan, adalah cara yang menarik untuk mengajarkan anak-anak tentang pertanian dan keberlanjutan di lingkungan perkotaan dengan lahan yang sempit. Melibatkan anak-anak dalam urban farming dapat memberikan pengalaman yang mendidik dan sekaligus menyenangkan. Hal tersebut telah kami lakukan di sekolah TKIT As Salaam Mijen Kota Semarang dimana dengan keterbatasan lahan yang kami miliki tidak menghalangi kami untuk melakukan urban farming."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgartikel" />
+
+            <TextView
+                android:id="@+id/idpenjelasan2"
+                android:layout_width="359dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Urban farming atau pertanian perkotaan memiliki sejumlah manfaat penting bagi pembelajaran anak usia dini. Berikut adalah beberapa alasan mengapa urban farming penting untuk anak-anak dalam tahap perkembangan tersebut:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan1" />
+
+            <TextView
+                android:id="@+id/idpenjelasan3"
+                android:layout_width="359dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="1.Pemahaman tentang Sumber Makanan: Urban farming membantu anak-anak memahami asal-usul makanan mereka. Mereka belajar bahwa makanan tidak hanya berasal dari toko atau pasar, tetapi juga dapat ditanam dan dipanen di lingkungan mereka sendiri. Ini membantu mereka menghargai makanan dan proses produksinya."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan2" />
+
+            <TextView
+                android:id="@+id/idpenjelasan4"
+                android:layout_width="359dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="18dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="2.Pendidikan Lingkungan: Anak-anak belajar tentang lingkungan dan alam melalui urban farming. Mereka dapat memahami pentingnya menjaga keberlanjutan lingkungan perkotaan dan berkontribusi pada perlindungan alam."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan3" />
+
+
+            <TextView
+                android:id="@+id/idpenjelasan5"
+                android:layout_width="359dp"
+                android:layout_height="109dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="3.Keterampilan Pertanian: Urban farming mengajarkan anak-anak berbagai keterampilan pertanian, seperti menanam, merawat, dan memanen tanaman. Ini membantu mereka mengembangkan pemahaman tentang siklus hidup tanaman dan keterampilan praktis yang berguna."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan4" />
+
+            <TextView
+                android:id="@+id/idpenjelasan6"
+                android:layout_width="359dp"
+                android:layout_height="128dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="4.Pengembangan Keterampilan Kognitif: Melalui pengamatan dan interaksi dengan tanaman, anak-anak mengembangkan keterampilan kognitif seperti observasi, perbandingan, dan pemecahan masalah. Mereka belajar tentang perbedaan antara berbagai jenis tanaman, musim tanam, dan faktor-faktor yang memengaruhi pertumbuhan tanaman."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan5" />
+
+            <TextView
+                android:id="@+id/idpenjelasan7"
+                android:layout_width="359dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="5.Keterampilan Sosial: Urban farming juga memberikan kesempatan bagi anak-anak untuk bekerja sama dalam kelompok. Mereka belajar berbagi tanggung jawab, berkomunikasi, dan bekerja sama untuk mencapai tujuan bersama."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan6" />
+
+            <TextView
+                android:id="@+id/idpenjelasan8"
+                android:layout_width="359dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="6.Pengalaman Praktis: Melalui urban farming, anak-anak mendapatkan pengalaman langsung yang mendalam tentang pertanian dan alam. Pengalaman praktis seperti ini dapat membuat pembelajaran lebih bermakna dan melekat dalam pikiran mereka."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan7" />
+
+            <TextView
+                android:id="@+id/idpenjelasan9"
+                android:layout_width="359dp"
+                android:layout_height="97dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="7.Koneksi dengan Makanan Sehat: Anak-anak yang terlibat dalam urban farming cenderung lebih terhubung dengan makanan sehat. Mereka belajar bahwa makanan segar yang mereka tanam sendiri lebih baik daripada makanan olahan yang dikemas."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan8" />
+
+            <TextView
+                android:id="@+id/idpenjelasan10"
+                android:layout_width="359dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="8.Penghargaan pada Kerja Keras dan Kesabaran: Urban farming mengajarkan anak-anak tentang usaha, kesabaran, dan ketekunan. Mereka dapat melihat bagaimana perawatan dan perhatian yang diberikan pada tanaman menghasilkan hasil yang bermanfaat."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan9" />
+
+            <TextView
+                android:id="@+id/tvpenulis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Esti Dwi Noraeni| Guru - Guru TKIT As Salaam Mijen Kota Semarang"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis" />
+
+            <!-- Tambahkan TextView tambahan sesuai kebutuhan -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="3dp" />
+    <!--    nav button-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#60905B"
+        android:foregroundTint="#60905B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="632dp"
+            android:src="@drawable/navbar_bg"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="707dp"
+            android:src="@drawable/navbar_alarm"></ImageView>
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="710dp"
+            android:src="@drawable/navbar_location"></ImageView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="702dp"
+            android:src="@drawable/navbar_konten"></ImageView>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="699dp"
+            android:src="@drawable/navbar_profile"></ImageView>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

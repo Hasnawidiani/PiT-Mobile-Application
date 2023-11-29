@@ -1,0 +1,246 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgdetail"
+    tools:context=".Buncis"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/tvbuncis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kavoon"
+        android:text="Buncis"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/kotakbuncis"
+        android:layout_width="146dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+        app:srcCompat="@drawable/kotakdetail" />
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/buncis"
+        android:layout_width="127dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="@id/kotakbuncis"
+        app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+        app:srcCompat="@drawable/buncis" />
+
+
+    <ScrollView
+        android:layout_width="355dp"
+        android:layout_height="419dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/arrowback"
+        app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+        app:layout_constraintVertical_bias="0.786">
+
+        <!-- ConstraintLayout di dalam ScrollView -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextView pertama -->
+            <TextView
+                android:id="@+id/idpenjelasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:text="Deskripsi:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/arrowback"
+                app:layout_constraintTop_toBottomOf="@+id/tvpanen"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/idpenjelasan2"
+                android:layout_width="341dp"
+                android:layout_height="222dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Buncis atau kacang panjang (Phaseolus vulgaris) adalah tumbuhan dari keluarga Fabaceae,
+                 berasal dari Amerika Tengah dan Selatan. Tumbuhan ini termasuk dalam kelompok tanaman semusim,
+                 dengan tinggi mencapai sekitar 1 hingga 2 meter. Buncis menghasilkan polong yang umumnya panjang dan silindris, dengan warna bervariasi seperti hijau, kuning, atau ungu. Polong buncis sering
+                  digunakan sebagai sayuran dalam berbagai masakan atau dapat dikonsumsi secara langsung setelah
+                  diproses. Meskipun batang dan daunnya tidak cocok untuk dikonsumsi, buahnya mengandung berbagai
+                  nutrisi penting seperti serat, vitamin, dan mineral."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan" />
+
+            <!-- TextView tambahan -->
+
+            <TextView
+                android:id="@+id/idpenjelasan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:text="Teknik Tanam: "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan2" />
+
+            <TextView
+                android:id="@+id/idpenjelasan4"
+                android:layout_width="341dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Proses penanaman buncis dimulai dengan penaburan biji, dan setelah tumbuh empat daun sejati, tanaman ini siap untuk ditanam di tempat yang telah disiapkan."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan3" />
+
+            <TextView
+                android:id="@+id/idpenjelasan5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:text="Hama: "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan4" />
+
+            <TextView
+                android:id="@+id/idpenjelasan6"
+                android:layout_width="341dp"
+                android:layout_height="223dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="1. Kutu Daun: Kutu daun dapat menyebabkan kerusakan pada daun buncis dengan
+                 menghisap cairan tanaman, menyebabkan penurunan produktivitas.
+2. Ulat: Ulat tanah atau ulat buah dapat menggerogoti polong buncis dan mengakibatkan kerusakan struktural pada buah.
+3. Walang Sangit: Serangga ini dapat mengisap cairan tanaman dan menyebabkan kerusakan pada buncis.
+4. Kumbang: Beberapa jenis kumbang, meskipun lebih umum terkait dengan tanaman lain, juga dapat merugikan pertumbuhan buncis.
+5. Nematoda: Cacing mikroskopis ini dapat merusak akar buncis, mempengaruhi pertumbuhan dan hasil panen."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan5" />
+
+            <TextView
+                android:id="@+id/idpenjelasan7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:text=" Pengendalian Hama: "
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan6" />
+
+            <TextView
+                android:id="@+id/idpenjelasan8"
+                android:layout_width="339dp"
+                android:layout_height="370dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="1. Pengamatan Rutin: Amati tanaman secara teratur untuk mendeteksi tanda-tanda serangan hama atau penyakit sejak dini.
+2. Pemangkasan: Pemangkasan daun atau bagian tanaman yang terinfeksi dapat membantu mengendalikan penyebaran hama.
+3. Penggunaan Pestisida: Jika diperlukan, pertimbangkan penggunaan pestisida organik atau kimia yang sesuai dengan petunjuk label.
+4. Rotasi Tanaman: Praktikkan rotasi tanaman untuk menghindari penumpukan hama dan penyakit di tanah.
+5. Penyiraman Teratur: Pertahankan kelembaban tanah yang konsisten dan hindari penyiraman langsung pada daun untuk mengurangi risiko penyakit jamur.
+6. Varietas Tahan Hama: Pilih varietas bawang perai yang tahan terhadap hama dan penyakit tertentu.
+7. Perangkap Serangga: Gunakan perangkap serangga, seperti perangkap kuning, untuk mengurangi populasi hama.
+8. Alternatif Organik: Pertimbangkan penggunaan metode organik, seperti minyak neem atau larutan sabun, untuk mengendalikan hama.
+
+ "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan7" />
+
+            <!-- Tambahkan TextView tambahan sesuai kebutuhan -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/tvtanggal"
+        android:layout_width="156dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/arrowback"
+        app:layout_constraintTop_toBottomOf="@+id/kotakbuncis"
+        app:srcCompat="@drawable/editextborder"
+        app:tint="#D9D9D9"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/tvpanen"
+        android:layout_width="77dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/germania_one"
+        android:text="1 bulan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/arrowback"
+        app:layout_constraintTop_toBottomOf="@+id/kotakbuncis" />
+
+    <ImageView
+        android:id="@+id/kalendar"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/arrowback"
+        app:layout_constraintTop_toBottomOf="@+id/kotakbuncis"
+        app:srcCompat="@drawable/baseline_calendar_month_24"
+        app:tint="#5B8E55" />
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

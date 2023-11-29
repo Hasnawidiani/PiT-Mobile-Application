@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "582019920213",
+    "project_id": "wikeenlogin-8bda5",
+    "storage_bucket": "wikeenlogin-8bda5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582019920213:android:01ed62e134140afbcfffdc",
+        "android_client_info": {
+          "package_name": "com.example.wikeenlogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhDqvhFPakjbH6m2D04PKc3IE2PtJ-Abw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582019920213:android:24826d2a5e12e7eacfffdc",
+        "android_client_info": {
+          "package_name": "com.example.wikeenlogin2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhDqvhFPakjbH6m2D04PKc3IE2PtJ-Abw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

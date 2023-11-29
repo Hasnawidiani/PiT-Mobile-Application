@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login"></ImageView>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pictprof"></ImageView>
+
+    <ImageView
+        android:id="@+id/profile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile1"></ImageView>
+
+    <ImageView
+        android:id="@+id/profile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile2"></ImageView>
+
+    <ImageView
+        android:id="@+id/profile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile3"></ImageView>
+
+    <ImageView
+        android:id="@+id/profile4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile4"></ImageView>
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="48dp"
+        android:layout_height="34dp"
+        app:srcCompat="@drawable/arrow_back"
+        app:tint="#677E52" />
+
+    <!--    nav button-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#60905B"
+        android:foregroundTint="#60905B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="632dp"
+            android:src="@drawable/navbar_bg"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="707dp"
+            android:src="@drawable/navbar_alarm"></ImageView>
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="710dp"
+            android:src="@drawable/navbar_location"></ImageView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="702dp"
+            android:src="@drawable/navbar_konten"></ImageView>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="699dp"
+            android:src="@drawable/navbar_profile"></ImageView>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

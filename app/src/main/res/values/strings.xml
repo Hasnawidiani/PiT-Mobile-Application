@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WIKEENLOGIN2</string>
+    <string-array name="lokasi">
+        <item>Utara</item>
+        <item>Selatan</item>
+    </string-array>
+    <string-array name="jenis">
+        <item>Herbal</item>
+        <item>Tanaman Hias</item>
+        <item>Buah-buahan</item>
+        <item>Sayuran</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="konten_rekomendasi">Konten Rekomendasi</string>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KontenPage"
+    android:background="@drawable/background_konten">
+
+
+    <ImageView
+        android:id="@+id/iv_Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konten Rekomendasi"
+        android:textColor="@color/hijau_utama"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:foregroundTint="#3C3F41"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/btn_artikel"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_foreground_green"
+            android:text="Artikel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_video"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@drawable/shape_rectangle_dark_green"
+            android:text="Video"
+            android:backgroundTint="#677E52"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="280dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/green_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape_search_white"
+        android:elevation="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/SearchView"
+            app:iconifiedByDefault="true"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Search" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+
+    </FrameLayout>
+
+    <!--    nav button-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#60905B"
+        android:foregroundTint="#60905B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="632dp"
+            android:src="@drawable/navbar_bg"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="707dp"
+            android:src="@drawable/navbar_alarm"></ImageView>
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="710dp"
+            android:src="@drawable/navbar_location"></ImageView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="702dp"
+            android:src="@drawable/navbar_konten"></ImageView>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="699dp"
+            android:src="@drawable/navbar_profile"></ImageView>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglokasi"
+    tools:context=".TanamanHiasHome"
+    tools:ignore="ExtraText">
+
+
+    <!-- Tambahkan kode ini setelah tombol yang sudah ada -->
+
+
+    <ImageView
+        android:id="@+id/kotakarugula"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrowback"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakbrusel"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotakarugula"
+        app:srcCompat="@drawable/editextborder" />
+
+
+    <ImageView
+        android:id="@+id/kotakseledri"
+        android:layout_width="103dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrowback"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakbit"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvjudul"
+        app:srcCompat="@drawable/editextborder" />
+
+    <TextView
+        android:id="@+id/tvbayam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="290dp"
+        android:text="Arugula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotakarugula" />
+
+
+    <TextView
+        android:id="@+id/tvbrokoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:text="Escarolr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotakbrusel" />
+
+    <TextView
+        android:id="@+id/tvkacangpolong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="170dp"
+        android:text="Seledri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotakseledri" />
+
+
+    <TextView
+        android:id="@+id/tvbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="45dp"
+        android:text="Bit Merah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotakbit" />
+
+
+
+
+    <!--layout_constraintBottom_toTopOf, artinya berada di atas elemen x-->
+    <!--layout_constraintStart_toStartOf, artinya berada di posisi awal yg sama, sumbu horizontal-->
+    <!--layout_constraintTop_toBottomOf, artinya berada di bawah elemen-->
+    <!--&ndash;&gt;-->
+    <!-- Sesuaikan nilai ini -->
+
+    <ImageView
+        android:id="@+id/arugula"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbayam"
+        app:layout_constraintStart_toStartOf="@+id/kotakarugula"
+        app:srcCompat="@drawable/bungakol"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/brusel"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbrokoli"
+        app:layout_constraintStart_toStartOf="@+id/kotakarugula"
+        app:layout_constraintTop_toBottomOf="@+id/tvbayam"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/escarole"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+
+    <ImageView
+        android:id="@+id/seledri"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvkacangpolong"
+        app:layout_constraintStart_toStartOf="@+id/kotakseledri"
+        app:srcCompat="@drawable/seladaunggu"
+        tools:ignore="UnknownId" />
+
+
+    <ImageView
+        android:id="@+id/bit"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbit"
+        app:layout_constraintStart_toStartOf="@+id/kotakbit"
+        app:srcCompat="@drawable/articok"/>
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="59dp"
+        android:layout_height="39dp"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/kavoon"
+        android:text="Tanaman Hias"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    nav button-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#60905B"
+        android:foregroundTint="#60905B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="632dp"
+            android:src="@drawable/navbar_bg"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="707dp"
+            android:src="@drawable/navbar_alarm"></ImageView>
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="710dp"
+            android:src="@drawable/navbar_location"></ImageView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="702dp"
+            android:src="@drawable/navbar_konten"></ImageView>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="699dp"
+            android:src="@drawable/navbar_profile"></ImageView>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

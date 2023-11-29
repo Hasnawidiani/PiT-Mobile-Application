@@ -1,0 +1,289 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgartikel"
+    tools:context=".Artikel1"
+    tools:ignore="ExtraText">
+
+
+    <ScrollView
+        android:layout_width="376dp"
+        android:layout_height="686dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/arrowback">
+
+        <!-- ConstraintLayout di dalam ScrollView -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextView pertama -->
+
+            <TextView
+                android:id="@+id/tvbuncis"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:text="Urban Farming, Pertanian Modern di Lahan Minimalis Hasilkan Cuan Fantastis"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/kotakbuncis"
+                android:layout_width="146dp"
+                android:layout_height="122dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+                app:srcCompat="@drawable/kotakdetail" />
+
+            <!-- TextView tambahan -->
+
+            <ImageView
+                android:id="@+id/imgartikel"
+                android:layout_width="122dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="52dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.081"
+                app:layout_constraintStart_toStartOf="@id/kotakbuncis"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis"
+                app:srcCompat="@drawable/koriander" />
+
+            <TextView
+                android:id="@+id/idpenjelasan1"
+                android:layout_width="359dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="24dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Swadayaonline.com - Urban farming merupakan kegiatan budidaya pertanian di wilayah perkotaan. Urban farming dapat menjadi jawaban dalam menghadapi permasalahan pertanian di perkotaan seperti berkurangnya lahan atau sekadar memanfaatkan lahan kosong."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgartikel" />
+
+            <TextView
+                android:id="@+id/idpenjelasan2"
+                android:layout_width="359dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Seiring perkembangan trend, kini urban farming semakin banyak dilirik terutama oleh masyarakat di kota besar dan generasi milenial. Luas lahan yang digunakan rata-rata seluas 5-50 m2. Komoditas yang umum dibudidayakan adalah tanaman berumur pendek seperti sayuran dan buah, tanaman obat, serta tanaman hias."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan1" />
+
+            <TextView
+                android:id="@+id/idpenjelasan3"
+                android:layout_width="359dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Kementerian Pertanian di bawah arahan Menteri Pertanian Syahrul Yasin Limpo turut mendorong tumbuhnya pertanian perkotaan dengan mengoptimalkan teknologi dan memaksimalkan keterbatasan lahan tersebut."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan2" />
+
+            <TextView
+                android:id="@+id/idpenjelasan4"
+                android:layout_width="359dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="18dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="“Kita menggerakkan pertanian kota. Di lorong, di kantor, di gang harus bertani. Kiri kanan kita apa lahan yang ada harus dimanfaatkan untuk memproduksi tanaman,” ujar Mentan SYL pada suatu kesempatan."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan3" />
+
+
+            <TextView
+                android:id="@+id/idpenjelasan5"
+                android:layout_width="359dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Lebih lanjut, SYL menyatakan Urban farming ini sangat penting sebagai sarana edukasi bagi generasi milenial untuk terjun ke dunia pertanian. "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan4" />
+
+            <TextView
+                android:id="@+id/idpenjelasan6"
+                android:layout_width="359dp"
+                android:layout_height="101dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Badan Penyuluhan dan Pengembangan Sumber Daya Manusia Pertanian (BPPSDMP), turut mendorong pertumbuhan urban farming di wilayah perkotaan. Salah satunya melalui kunjungan kerja Kepala BPPSDMP, Dedi Nursyamsi, ke Pusat Pelatihan Pertanian Perdesaan Swadaya (P4S) Darul Husna."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan5" />
+
+            <TextView
+                android:id="@+id/idpenjelasan7"
+                android:layout_width="361dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Berlokasi di tengah Kota Cimahi, Provinsi Jawa Barat, P4S ini mengusung budidaya Urban Farming dan berbagai produk olahan.
+Kedatangan Kepala BPPSDMP didampingi Kepala BBPP Lembang, Ajat Jatnika, disambut baik oleh Kepala Dinas Ketahanan Pangan dan Pertanian Kota Cimahi beserta jajarannya, petani milenial, sekretaris kelurahan, ketua P4S Darul Husna, Kelompok Wanita Tani (KWT) “Geulis”, dan penyuluh pertanian. "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan6" />
+
+            <TextView
+                android:id="@+id/idpenjelasan8"
+                android:layout_width="359dp"
+                android:layout_height="304dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Disampaikan Tita Mariam, Kepala DKPP Kota Cimahi, P4S Darul Husna memiliki peran strategis. Tidak hanya dalam pemanfaatan lahan sempit di Kota Cimahi, namun juga mendorong partisipasi aktif masyarakat yang berdampak pada peningkatan ketahanan pangan dan ekonomi masyarakat sekitar P4S.Pada arahannya Dedi Nursyamsi menyampaikan pentingnya peran sumberdaya manusia dalam menciptakan pertanian yang maju, mandiri, dan modern. “Diperlukan SDM yang unggul dan kompeten. Mereka harus menjadi pionir, role model petani, dan agripreneur yang sukses.Untuk itu para petani muda wajib belajar tidak hanya secara teknis, tetapi juga mental untuk menjadi pengusaha yang tangguh”, kata Dedi.
+Dedi berharap kondisi geografis di perkotaan tidak menjadi halangan.
+“Kebutuhan pangan terus ada setiap saat, termasuk di perkotaan.
+Karenanya diperlukan urban farming. Tidak butuh lahan banyak, tapi menghasilkan cuan yang banyak.,” lanjutnya."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan7" />
+
+            <TextView
+                android:id="@+id/idpenjelasan9"
+                android:layout_width="359dp"
+                android:layout_height="128dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Diakui Dedi dirinya juga menerapkan urban farming di pekarangan rumah yang kemudian dibagikan kepada tetangga sekitar.
+“Urban farming sebetulnya mudah, intinya pemanfaatan lahan sempit untuk tanaman. Selama ada sinar matahari tumbuhan dapat tumbuh, tidak butuh waktu lama. Pilih tanaman yang perawatannya ringan”, kata Dedi membagikan tipsnya."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan8" />
+
+            <TextView
+                android:id="@+id/idpenjelasan10"
+                android:layout_width="359dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:text="Dengan menggunakan metode yang beragam seperti vertikultur, hidroponik, dan aquaponik, urban farming tidak hanya mengoptimalkan ruang terbatas, namun juga menciptakan ketahanan pangan lokal dan menciptakan hubungan yang lebih kuat antar masyarakat di perkotaan. DRY/YKO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idpenjelasan9" />
+
+            <TextView
+                android:id="@+id/tvpenulis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="udin abay | Selasa, 15 Agustus 2023 , 11:32:00 WIB"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvbuncis" />
+
+            <!-- Tambahkan TextView tambahan sesuai kebutuhan -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <!--    nav button-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#60905B"
+        android:foregroundTint="#60905B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="632dp"
+            android:src="@drawable/navbar_bg"></ImageView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="707dp"
+            android:src="@drawable/navbar_alarm"></ImageView>
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="710dp"
+            android:src="@drawable/navbar_location"></ImageView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="702dp"
+            android:src="@drawable/navbar_konten"></ImageView>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="699dp"
+            android:src="@drawable/navbar_profile"></ImageView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

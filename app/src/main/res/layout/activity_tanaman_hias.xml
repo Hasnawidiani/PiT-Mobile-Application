@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglokasi"
+    tools:context=".TanamanHias"
+    tools:ignore="ExtraText">
+
+
+    <Button
+        android:id="@+id/btnjenis"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="#677E52"
+        android:onClick="onKonfirmasiTanamanClick"
+        android:text="Konfirmasi Tanaman"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnlokasi"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnlokasi"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#677E52"
+        android:text="Konfirmasi Lokasi"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onKonfirmasiLokasiClick"/>
+
+    <Spinner
+        android:id="@+id/spinnerLokasi"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:entries="@array/lokasi"
+        app:layout_constraintBottom_toTopOf="@+id/kotakbayam"
+        app:layout_constraintStart_toStartOf="@+id/kotakseladaunggu"
+        app:layout_constraintTop_toBottomOf="@+id/bglokasi"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <Spinner
+        android:id="@+id/spinnerJenis"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:entries="@array/jenis"
+        app:layout_constraintBottom_toTopOf="@+id/kotakkol"
+        app:layout_constraintStart_toStartOf="@+id/btnjenis"
+        app:layout_constraintTop_toBottomOf="@+id/arrowback"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/kotakkol"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakescarole"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakseladaunggu"
+        android:layout_width="103dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakbayam"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <TextView
+        android:id="@+id/tvkol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="290dp"
+        android:text="Bunga Kol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvbrokoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="285dp"
+        android:text="Escarole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+
+    <TextView
+        android:id="@+id/tvseladaunggu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="150dp"
+        android:text="Selada Unggu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+
+    <TextView
+        android:id="@+id/tvarticok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="45dp"
+        android:text="Articok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <!--
+layout_constraintBottom_toTopOf, artinya berada di atas elemen x
+layout_constraintStart_toStartOf, artinya berada di posisi awal yg sama, sumbu horizontal
+layout_constraintTop_toBottomOf, artinya berada di bawah elemen
+-->
+
+    <ImageView
+        android:id="@+id/kol"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/kotakescarole"
+        app:layout_constraintStart_toStartOf="@+id/btnjenis"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bungakol"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/escarole"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbrokoli"
+        app:layout_constraintStart_toStartOf="@+id/kotakkol"
+        app:layout_constraintTop_toBottomOf="@+id/tvkol"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/escarole"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+
+    <ImageView
+        android:id="@+id/seladaunggu"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvseladaunggu"
+        app:layout_constraintStart_toStartOf="@+id/kotakseladaunggu"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/seladaunggu"
+        tools:ignore="UnknownId" />
+
+
+    <ImageView
+        android:id="@+id/articok"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvarticok"
+        app:layout_constraintStart_toStartOf="@+id/kotakbayam"
+        app:layout_constraintTop_toBottomOf="@+id/btnlokasi"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/articok"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

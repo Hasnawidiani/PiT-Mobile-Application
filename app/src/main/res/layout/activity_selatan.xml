@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglokasi"
+    tools:context=".Selatan"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/btnjenis"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="#677E52"
+        android:onClick="onKonfirmasiTanamanClick"
+        android:text="Konfirmasi Tanaman"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnlokasi"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnlokasi"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#677E52"
+        android:text="Konfirmasi Lokasi"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tambahkan kode ini setelah tombol yang sudah ada -->
+
+
+    <Spinner
+        android:id="@+id/spinnerLokasi"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:entries="@array/lokasi"
+        app:layout_constraintBottom_toTopOf="@+id/kotakbit"
+        app:layout_constraintStart_toStartOf="@+id/kotakkemangi"
+        app:layout_constraintTop_toBottomOf="@+id/bglokasi"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <Spinner
+        android:id="@+id/spinnerJenis"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#000000"
+        android:entries="@array/jenis"
+        app:layout_constraintBottom_toTopOf="@+id/kotakbayam"
+        app:layout_constraintStart_toStartOf="@+id/btnjenis"
+        app:layout_constraintTop_toBottomOf="@+id/arrowback"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/kotakbayam"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakbrusel"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakbayambit"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakterong"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="265dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+
+    <ImageView
+        android:id="@+id/kotakkemangi"
+        android:layout_width="103dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakbawangbatak"
+        android:layout_width="103dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakjahe"
+        android:layout_width="103dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakseledri"
+        android:layout_width="103dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakescarole"
+        android:layout_width="103dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakescarole2"
+        android:layout_width="103dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakwortel"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakbawangputih"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotaktomat"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakkoriander"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+    <ImageView
+        android:id="@+id/kotakbit"
+        android:layout_width="99dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:srcCompat="@drawable/editextborder" />
+
+
+    <TextView
+        android:id="@+id/tvarticok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="290dp"
+        android:text="Articok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+
+    <TextView
+        android:id="@+id/tvkubis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="290dp"
+        android:text="Kubis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvbayambit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="290dp"
+        android:text="Bayam Bit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvterong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="290dp"
+        android:text="Terong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvseladahijau1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="300dp"
+        android:text="Jahe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvkemangi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="170dp"
+        android:text="Kemangi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvkoriander"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="30dp"
+        android:text="Koriander"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvbawangputih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="32dp"
+        android:text="Bawang Putih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvtomat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="50dp"
+        android:text="Tomat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvwortel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="50dp"
+        android:text="Wortel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="45dp"
+        android:text="Bit Merah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvbawangbatak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="135dp"
+        android:text="Bawang Batak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvseladahijau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="160dp"
+        android:text="Selada Hijau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvkacangpolong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="170dp"
+        android:text="Seledri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <TextView
+        android:id="@+id/tvbrokoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="170dp"
+        android:text="Escarole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis" />
+
+    <!--
+layout_constraintBottom_toTopOf, artinya berada di atas elemen x
+layout_constraintStart_toStartOf, artinya berada di posisi awal yg sama, sumbu horizontal
+layout_constraintTop_toBottomOf, artinya berada di bawah elemen
+-->
+
+    <ImageView
+        android:id="@+id/articok"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/kotakbrusel"
+        app:layout_constraintStart_toStartOf="@+id/btnjenis"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/articok"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/kubis"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvkubis"
+        app:layout_constraintStart_toStartOf="@+id/kotakbrusel"
+        app:layout_constraintTop_toBottomOf="@+id/tvarticok"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/kubis"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/bayambit"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbayambit"
+        app:layout_constraintStart_toStartOf="@+id/kotakbayambit"
+        app:layout_constraintTop_toBottomOf="@+id/tvkubis"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bayambit"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+
+    <ImageView
+        android:id="@+id/terong"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvterong"
+        app:layout_constraintStart_toStartOf="@+id/kotakterong"
+        app:layout_constraintTop_toBottomOf="@+id/tvbayambit"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/terong"
+        tools:ignore="UnknownId" />
+
+
+    <ImageView
+        android:id="@+id/jahe"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="@+id/kotakterong"
+        app:layout_constraintTop_toBottomOf="@+id/tvbayambit"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/jahe"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/kemangi"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvkemangi"
+        app:layout_constraintStart_toStartOf="@+id/kotakkemangi"
+        app:layout_constraintTop_toBottomOf="@+id/btnjenis"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/kemangi"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/bawangbatak"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbawangbatak"
+        app:layout_constraintStart_toStartOf="@+id/kotakbawangbatak"
+        app:layout_constraintTop_toBottomOf="@+id/tvkemangi"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bawangbatak"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/seladahijau"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvseladahijau"
+        app:layout_constraintStart_toStartOf="@+id/kotakjahe"
+        app:layout_constraintTop_toBottomOf="@+id/tvbawangbatak"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/seladahijau"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/seladri"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvkacangpolong"
+        app:layout_constraintStart_toStartOf="@+id/kotakseledri"
+        app:layout_constraintTop_toBottomOf="@+id/tvseladahijau"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/seledri"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/escarole"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbrokoli"
+        app:layout_constraintStart_toStartOf="@+id/kotakescarole"
+        app:layout_constraintTop_toBottomOf="@+id/btnlokasi"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="@drawable/escarole"
+        tools:ignore="UnknownId" />
+
+
+    <ImageView
+        android:id="@+id/bitmerah"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbitmerah"
+        app:layout_constraintStart_toStartOf="@+id/kotakbit"
+        app:layout_constraintTop_toBottomOf="@+id/btnlokasi"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bitmerah"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/arrowback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/wortel"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvwortel"
+        app:layout_constraintStart_toStartOf="@+id/kotakwortel"
+        app:layout_constraintTop_toBottomOf="@+id/tvbitmerah"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/wortel"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <ImageView
+        android:id="@+id/koriander"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvkoriander"
+        app:layout_constraintStart_toStartOf="@+id/kotakkoriander"
+        app:layout_constraintTop_toBottomOf="@+id/tvwortel"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/koriander"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/bawangputih"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvbawangputih"
+        app:layout_constraintStart_toStartOf="@+id/kotakbawangputih"
+        app:layout_constraintTop_toBottomOf="@+id/tvkoriander"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bawangputih"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/tomat"
+        android:layout_width="55dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvtomat"
+        app:layout_constraintStart_toStartOf="@+id/kotaktomat"
+        app:layout_constraintTop_toBottomOf="@+id/tvbawangputih"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tomat"
+        tools:ignore="UnknownId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

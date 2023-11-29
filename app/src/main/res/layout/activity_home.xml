@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="-10dp"
+                android:layout_height="394dp"
+                app:srcCompat="@drawable/bghome" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/hijau_utama"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="Kategori">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonkategori"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="300dp">
+
+                    <ImageView
+                        android:id="@+id/btnherbal"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/herbal" />
+
+                    <ImageView
+                        android:id="@+id/btnhias"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        app:srcCompat="@drawable/hias"/>
+
+                    <ImageView
+                        android:id="@+id/btnbuah"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        app:srcCompat="@drawable/buah"/>
+
+                    <ImageView
+                        android:id="@+id/btnsayur"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="290dp"
+                        app:srcCompat="@drawable/sayur"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="80dp"
+                        android:text="Herbal"
+                        android:textColor="@color/hijau_teks"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="97dp"
+                        android:layout_marginTop="80dp"
+                        android:text="Tanaman Hias"
+                        android:textColor="@color/hijau_teks"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+                    <TextView
+                        android:layout_width="46dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="80dp"
+                        android:text="Buah"
+                        android:textColor="@color/hijau_teks"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginTop="80dp"
+                        android:text="Sayuran"
+                        android:textColor="@color/hijau_teks"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck"></TextView>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="450dp"
+                    android:text="Video Rekomendasi"
+                    android:textColor="@color/hijau_teks"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="450dp"
+                    android:text="Lihat lebih"
+                    android:textColor="@color/bluelink"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="480dp"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/vidbtn_home"
+                            android:layout_marginLeft="5dp">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="115dp"
+                            android:layout_marginTop="22dp"
+                            android:text="Apasih Urbah Farming itu?"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck"></TextView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fotovideo"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginLeft="25dp">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/vidbtn_home"
+                            android:layout_marginLeft="220dp">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="335dp"
+                            android:layout_marginTop="22dp"
+                            android:text="Manfaat dari urban farming"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fotovideo"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginLeft="240dp">
+                        </ImageView>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="610dp"
+                    android:text="Artikel yang mungkin anda sukai"
+                    android:textColor="@color/hijau_teks"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_lihatLebih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="450dp"
+                    android:clickable="true"
+                    android:minHeight="48dp"
+                    android:text="Lihat lebih"
+                    android:textColor="@color/bluelink"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="610dp"
+                    android:text="Lihat lebih"
+                    android:textColor="@color/bluelink"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="640dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/artikelpic1"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:src="@drawable/rec_artikel1" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="5 cara menanam..."
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="140dp"
+                            android:textColor="@color/black">
+                        </TextView>
+                        <ImageView
+                            android:id="@+id/artikelpic2"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="150dp"
+                            android:src="@drawable/rec_artikel2">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Waktu menyiram..."
+                            android:layout_marginLeft="158dp"
+                            android:layout_marginTop="140dp"
+                            android:textColor="@color/black">
+                        </TextView>
+                        <ImageView
+                            android:id="@+id/artikelpic3"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="300dp"
+                            android:src="@drawable/rec_artikel3">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cara membuat..."
+                            android:layout_marginLeft="310dp"
+                            android:layout_marginTop="140dp"
+                            android:textColor="@color/black">
+                        </TextView>
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="450dp"
+                            android:src="@drawable/rec_artikel4">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tips menanam di..."
+                            android:layout_marginLeft="460dp"
+                            android:layout_marginTop="140dp"
+                            android:textColor="@color/black">
+                        </TextView>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+                <FrameLayout
+                    android:layout_width="550dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="750dp">
+
+                </FrameLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="410dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="632dp"
+            android:layout_marginLeft="-5dp"
+            android:src="@drawable/navbar_bg">
+        </ImageView>
+        <ImageView
+            android:id="@+id/alarm"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="707dp"
+            android:src="@drawable/navbar_alarm">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iconlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="710dp"
+            android:src="@drawable/navbar_location"></ImageView>
+        <ImageView
+            android:id="@+id/kontenfav"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="702dp"
+            android:src="@drawable/navbar_konten">
+        </ImageView>
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="699dp"
+            android:src="@drawable/navbar_profile">
+        </ImageView>
+    </FrameLayout>
+
+</FrameLayout>
